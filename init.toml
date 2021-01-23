@@ -1,0 +1,125 @@
+#=============================================================================
+#=============================================================================
+#                            spacevim 配置 
+#                      快速打开配置文件快捷键：Spc f v d 
+#=============================================================================
+#=============================================================================
+
+#============================= [选项] 配置 ================================================
+[options]
+
+    # 主题
+    # colorscheme = "gruvbox"
+    colorscheme = "one"
+    colorscheme_bg = "dark"
+
+
+    # 在基本模式下禁用guicolors，许多终端不支持24bit
+    # 真面目
+    enable_guicolors = true
+
+    # 状态栏分割符
+    statusline_separator = "fire"
+    statusline_inactive_separator = "arrow"
+    buffer_index_type = 4
+    enable_tabline_filetype_icon = true
+    enable_statusline_mode = false
+
+    # 中文帮助文档
+    vim_help_language = "cn"
+    # 字体设置
+    guifont = "Hack Nerd Font:h14"
+
+
+# 函数
+
+    bootstrap_before = "myspacevim#windowsleader"
+    bootstrap_after  = "myspacevim#after"
+
+
+#============================= [插件] 配置 ================================================
+
+# Enable autocomplete layer
+[[layers]]
+name = 'autocomplete'
+
+# shell
+[[layers]]
+name = 'shell'
+default_position = 'float'
+default_height = 30
+
+[[layers]]
+  name = "colorscheme"
+
+# chinese mode
+[[layers]]
+  name = "chinese"
+
+# tmux
+# Ctrl + hjkl 切换窗格
+[[layers]]
+  name = "tmux"
+
+# toml 语法高亮
+[[layers]]
+  name = "lang#toml"
+
+# # vim 语法高亮
+# [[layers]]
+  name = "lang#vim"
+
+# markdown
+# 浏览器实时预览： SPC l p
+[[layers]]
+  name = "lang#markdown"
+
+
+# shell 语法检查
+[[layers]]
+  name = "lang#sh"
+
+# dockerfile 语法高亮，如若需要语言服务器支持需要安装 ：npm install -g dockerfile-language-server-nodejs
+[[layers]]
+  name = "lang#dockerfile"
+
+
+# git
+[[layers]]
+  name = "git"
+
+#============================= python 开发环境 ================================================
+# 快速运行: SPC l r
+
+# ---->   交互式编程
+# 启用后进程： SPC l s i
+# 逐行发送： SPC l s l
+# 选中区域发送： SPC l s s
+
+#---->  安装 python 模块
+[[layers]]
+  name = "lang#python"
+
+# ---->  语法检查：
+# checkers 模块为 SpaceVim 提供了语法检查的功能，该模块默认已经载入。该模块默认使用 neomake 这一异步语法检查工具。对于 Python 的支持，是通过异步调用 flake8 命令，因此需安装，可通过 pip 命令来完成：
+# pip install --user flake8
+
+# python 代码格式化 需要安装依赖 yapf:
+# pip install --user yapf
+[[layers]]
+  name = "format"
+
+
+#---->   导入模块：
+# 在编辑 Python 文件时，可以自动导入包、自动删除无用的包、排序格式化导包；需要安装 isort，可通过以下命令安装：
+# pip install --user isort
+
+# 调试
+[[layers]]
+   name = "debug"
+
+#============================= 添加自定义插件 ================================================
+#
+# [[custom_plugins]]
+#
+
