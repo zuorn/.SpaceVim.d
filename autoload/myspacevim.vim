@@ -4,4 +4,3 @@ function! myspacevim#windowsleader() abort
 endfunction
 
 
-

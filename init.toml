@@ -47,7 +47,7 @@ name = 'autocomplete'
 [[layers]]
 name = 'shell'
 default_position = 'float'
-default_height = 30
+default_height = 50
 
 [[layers]]
   name = "colorscheme"
@@ -88,6 +88,11 @@ default_height = 30
 [[layers]]
   name = "git"
 
+
+# 版本控制
+[[layers]]
+  name = "VersionControl"
+
 #============================= python 开发环境 ================================================
 # 快速运行: SPC l r
 
@@ -122,4 +127,13 @@ default_height = 30
 #
 # [[custom_plugins]]
 #
+[[custom_plugins]]
+    repo = "neoclide/coc.nvim"
+    on_cmd = ["ColorHighlight", "ColorToggle"]
+    merged = false
+
+    repo = "francoiscabrol/ranger.vim"
+    on_cmd = ["ColorHighlight", "ColorToggle"]
+    merged = false
+
 
