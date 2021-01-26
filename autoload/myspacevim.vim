@@ -1,43 +1,18 @@
 
-" 将 windows_leader 键位 '\' 切换为 ';'
-" function! myspacevim#before() abort
-"     let g:mapleader = ';'
-" endfunction
-
-
-
-" 自动换行
-function! myspacevim#set() abort
-    " set wrap
-endfunction
-
-
-
-
-" jk 返回正常模式
 function! myspacevim#before() abort
+    let g:ranger_map_keys = <leader>f
+    " 将 windows_leader 键位 '\' 切换为 ';'
     let g:mapleader = ';'
+    " jk 返回正常模式
     let g:neomake_c_enabled_makers = ['clang']
     nnoremap jk <esc>
+    " 自动换行
     set wrap
-endfunction
 
-function! myspacevim#after() abort
-    iunmap jk
-endfunction
 
-" 表格 vim-table-mode
-" ranger 配置
-function! myspacevim#ranger() abort
-    let g:ranger_map_keys = <leader>f
-    let g:NERDTreeHijackNetrw = 0 // add this line if you use NERDTree
-    let g:ranger_replace_netrw = 1 // open ranger when vim open a directory
-  
-endfunction
 
-" maarkdown 配置
-function! myspacevim#markdown() abort
-    
+    " maarkdown 配置
+
     "autocmd Filetype markdown map <leader>w yiWi[<esc>Ea](<esc>pa)
     autocmd Filetype markdown inoremap ,f <Esc>/<++><CR>:nohlsearch<CR>c4l
     autocmd Filetype markdown inoremap ,n ---<Enter><Enter>
@@ -55,3 +30,10 @@ function! myspacevim#markdown() abort
     autocmd Filetype markdown inoremap ,4 ####<Space><Enter><++><Esc>kA
     autocmd Filetype markdown inoremap ,l --------<Enter>
 endfunction
+
+function! myspacevim#after() abort
+    iunmap jk
+endfunction
+
+" 表格 vim-table-mode
+
