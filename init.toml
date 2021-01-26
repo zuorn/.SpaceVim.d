@@ -33,8 +33,17 @@
 
 # 函数
 
-    bootstrap_before = "myspacevim#windowsleader"
+    bootstrap_before = "myspacevim#leader"
+    bootstrap_before = "myspacevim#markdown"
+    bootstrap_before = "myspacevim#ranger"
+    bootstrap_before = "myspacevim#set"
+
+    bootstrap_before = "myspacevim#before"
     bootstrap_after  = "myspacevim#after"
+
+
+# 设置
+#  set wrap
 
 
 #============================= [插件] 配置 ================================================
@@ -93,6 +102,7 @@ default_height = 50
 [[layers]]
   name = "VersionControl"
 
+
 #============================= python 开发环境 ================================================
 # 快速运行: SPC l r
 
@@ -126,14 +136,25 @@ default_height = 50
 #============================= 添加自定义插件 ================================================
 #
 # [[custom_plugins]]
-#
+# one_cmd 选项使得这个插件延迟加载。
+# merged 选项用于设定是否合并该插件的文件夹，如果 merged 是 true，那么，这一插件内的文件将被合并到： ~/.cache/vimfiles/.cache/init.vim/ 或者 ~/.cache/vimfiles/.cache/vimrc/， 这依据当前使用的是 Neovim 还是 Vim。
 [[custom_plugins]]
     repo = "neoclide/coc.nvim"
     on_cmd = ["ColorHighlight", "ColorToggle"]
     merged = false
 
+# ranger 插件
+# 使用说明：https://github.com/francoiscabrol/ranger.vim
     repo = "francoiscabrol/ranger.vim"
     on_cmd = ["ColorHighlight", "ColorToggle"]
     merged = false
 
+
+# Vimwiki 是 Vim 中的个人 Wiki —— 一组链接起来的、有独特语法高亮的文本文件。
+# 使用方法：https://github.com/vimwiki/vimwiki/blob/master/README-cn.md
+    # repo = "vimwiki/vimwiki"
+    # on_cmd = ["ColorHighlight", "ColorToggle"]
+    # merged = false
+
+# 表格 vim-table-mode
 
