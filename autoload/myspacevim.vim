@@ -1,8 +1,8 @@
 
 " 将 windows_leader 键位 '\' 切换为 ';'
-function! myspacevim#before() abort
-    let g:mapleader = ';'
-endfunction
+" function! myspacevim#before() abort
+"     let g:mapleader = ';'
+" endfunction
 
 
 
@@ -16,6 +16,7 @@ endfunction
 
 " jk 返回正常模式
 function! myspacevim#before() abort
+    let g:mapleader = ';'
     let g:neomake_c_enabled_makers = ['clang']
     nnoremap jk <esc>
     set wrap
