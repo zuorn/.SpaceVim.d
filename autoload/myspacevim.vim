@@ -1,6 +1,9 @@
 
 function! myspacevim#before() abort
-    let g:ranger_map_keys = <leader>f
+    " 设置 ranger 路径
+    set rtp+=~/path/to/your/localplugin
+    " ranger 键位绑定
+    let g:ranger_map_keys = <leader>r
     " 将 windows_leader 键位 '\' 切换为 ';'
     let g:mapleader = ';'
     " jk 返回正常模式
@@ -30,15 +33,15 @@ function! myspacevim#before() abort
     autocmd filetype markdown inoremap ,4 ####<space><enter><++><esc>ka
     autocmd filetype markdown inoremap ,l --------<enter>
 endfunction
-"
-"
-表格 vim-table-mode
-"
-"
-"
+
+
+
+
+
 function! myspacevim#after() abort
     iunmap jk
 endfunction
-"
 
 
+
+" 表格 vim-table-mode
