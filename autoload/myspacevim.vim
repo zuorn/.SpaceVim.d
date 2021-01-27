@@ -1,52 +1,44 @@
 
-" function! myspacevim#before() abort
-"     let g:ranger_map_keys = <leader>f
-"     " 将 windows_leader 键位 '\' 切换为 ';'
-"     let g:mapleader = ';'
-"     " jk 返回正常模式
-"     let g:neomake_c_enabled_makers = ['clang']
-"     nnoremap jk <esc>
-"     " 自动换行
-"     set wrap
-"     "
-"
-"
-"     " maarkdown 配置
-"
-"     "autocmd Filetype markdown map <leader>w yiWi[<esc>Ea](<esc>pa)
-"     autocmd Filetype markdown inoremap ,f <Esc>/<++><CR>:nohlsearch<CR>c4l
-"     autocmd Filetype markdown inoremap ,n ---<Enter><Enter>
-"     autocmd Filetype markdown inoremap ,b **** <++><Esc>F*hi
-"     autocmd Filetype markdown inoremap ,s ~~~~ <++><Esc>F~hi
-"     autocmd Filetype markdown inoremap ,i ** <++><Esc>F*i
-"     autocmd Filetype markdown inoremap ,d `` <++><Esc>F`i
-"     autocmd Filetype markdown inoremap ,c ```<Enter><++><Enter>```<Enter><Enter><++><Esc>4kA
-"     autocmd Filetype markdown inoremap ,h ====<Space><++><Esc>F=hi
-"     autocmd Filetype markdown inoremap ,p ![](<++>) <++><Esc>F[a
-"     autocmd Filetype markdown inoremap ,a [](<++>) <++><Esc>F[a
-"     autocmd Filetype markdown inoremap ,1 #<Space><Enter><++><Esc>kA
-"     autocmd Filetype markdown inoremap ,2 ##<Space><Enter><++><Esc>kA
-"     autocmd Filetype markdown inoremap ,3 ###<Space><Enter><++><Esc>kA
-"     autocmd Filetype markdown inoremap ,4 ####<Space><Enter><++><Esc>kA
-"     autocmd Filetype markdown inoremap ,l --------<Enter>
-" endfunction
-
-
-" 表格 vim-table-mode
-
-
-
-" function! myspacevim#after() abort
-"     iunmap jk
-" endfunction
-"
-
-
 function! myspacevim#before() abort
+    let g:ranger_map_keys = <leader>f
+    " 将 windows_leader 键位 '\' 切换为 ';'
+    let g:mapleader = ';'
+    " jk 返回正常模式
     let g:neomake_c_enabled_makers = ['clang']
     nnoremap jk <esc>
-endfunction
+    " 自动换行
+    set wrap
+    "
 
+
+    " maarkdown 配置
+
+    "autocmd filetype markdown map <leader>w yiwi[<esc>ea](<esc>pa)
+    autocmd filetype markdown inoremap ,f <esc>/<++><cr>:nohlsearch<cr>c4l
+    autocmd filetype markdown inoremap ,n ---<enter><enter>
+    autocmd filetype markdown inoremap ,b **** <++><esc>f*hi
+    autocmd filetype markdown inoremap ,s ~~~~ <++><esc>f~hi
+    autocmd filetype markdown inoremap ,i ** <++><esc>f*i
+    autocmd filetype markdown inoremap ,d `` <++><esc>f`i
+    autocmd filetype markdown inoremap ,c ```<enter><++><enter>```<enter><enter><++><esc>4ka
+    autocmd filetype markdown inoremap ,h ====<space><++><esc>f=hi
+    autocmd filetype markdown inoremap ,p ![](<++>) <++><esc>f[a
+    autocmd filetype markdown inoremap ,a [](<++>) <++><esc>f[a
+    autocmd filetype markdown inoremap ,1 #<space><enter><++><esc>ka
+    autocmd filetype markdown inoremap ,2 ##<space><enter><++><esc>ka
+    autocmd filetype markdown inoremap ,3 ###<space><enter><++><esc>ka
+    autocmd filetype markdown inoremap ,4 ####<space><enter><++><esc>ka
+    autocmd filetype markdown inoremap ,l --------<enter>
+endfunction
+"
+"
+表格 vim-table-mode
+"
+"
+"
 function! myspacevim#after() abort
     iunmap jk
 endfunction
+"
+
+
