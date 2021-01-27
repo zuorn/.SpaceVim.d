@@ -41,6 +41,10 @@
     bootstrap_before = "myspacevim#before"
     bootstrap_after  = "myspacevim#after"
 
+    bootstrap_before = "myspacevim#jk"
+
+
+
 
 # 设置
 #  set wrap

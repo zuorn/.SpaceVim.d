@@ -7,7 +7,7 @@ function! myspacevim#before() abort
     " let g:neomake_c_enabled_makers = ['clang']
     " nnoremap jk <esc>
     " " 自动换行
-    " set wrap
+    set wrap
     "
 
 
@@ -31,9 +31,17 @@ function! myspacevim#before() abort
     " autocmd Filetype markdown inoremap ,l --------<Enter>
 endfunction
 
+
+" 表格 vim-table-mode
+
+
+function! myspacevim#jk() abort
+  let g:g:neomake_c_enabled_makers = ['clang']
+  nnoremap jk <esc>
+endfunction
+
+
 function! myspacevim#after() abort
     iunmap jk
 endfunction
-
-" 表格 vim-table-mode
 
