@@ -33,6 +33,7 @@
 
 # 函数
     
+[options]
     bootstrap_before = "myspacevim#before"
     bootstrap_after  = "myspacevim#after"
 
