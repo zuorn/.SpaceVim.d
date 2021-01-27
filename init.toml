@@ -33,15 +33,9 @@
 
 # 函数
 
-    # bootstrap_before = "myspacevim#leader"
-    # bootstrap_before = "myspacevim#markdown"
-    # bootstrap_before = "myspacevim#ranger"
-    # bootstrap_before = "myspacevim#set"
 
     bootstrap_before = "myspacevim#before"
     bootstrap_after  = "myspacevim#after"
-
-    bootstrap_before = "myspacevim#jk"
 
 
 
