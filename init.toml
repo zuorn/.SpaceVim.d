@@ -145,17 +145,15 @@ default_height = 50
 
 # ranger 插件
 # 使用说明：https://github.com/francoiscabrol/ranger.vim
-    # repo = "francoiscabrol/ranger.vim"
-    # on_cmd = ["ColorHighlight", "ColorToggle"]
-    # merged = false
+    repo = "francoiscabrol/ranger.vim"
+    on_cmd = ["ColorHighlight", "ColorToggle"]
+    merged = false
 
 
 # Vimwiki 是 Vim 中的个人 Wiki —— 一组链接起来的、有独特语法高亮的文本文件。
 # 使用方法：https://github.com/vimwiki/vimwiki/blob/master/README-cn.md
-    # repo = "vimwiki/vimwiki"
-    # on_cmd = ["ColorHighlight", "ColorToggle"]
-    # merged = false
+    repo = "vimwiki/vimwiki"
+    on_cmd = ["ColorHighlight", "ColorToggle"]
+    merged = false
 
 # 表格 vim-table-mode
-
-  
