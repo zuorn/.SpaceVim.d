@@ -11,7 +11,6 @@ function! myspacevim#before() abort
     nnoremap jk <esc>
     " 自动换行
     set wrap
-    "
 
 
     " maarkdown 配置
