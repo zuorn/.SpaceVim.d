@@ -15,21 +15,22 @@ function! conf#before() abort
     " maarkdown 配置
 
     "autocmd filetype markdown map <leader>w yiwi[<esc>ea](<esc>pa)
-    autocmd filetype markdown inoremap ,f <esc>/<++><cr>:nohlsearch<cr>c4l
-    autocmd filetype markdown inoremap ,n ---<enter><enter>
-    autocmd filetype markdown inoremap ,b **** <++><esc>f*hi
-    autocmd filetype markdown inoremap ,s ~~~~ <++><esc>f~hi
-    autocmd filetype markdown inoremap ,i ** <++><esc>f*i
-    autocmd filetype markdown inoremap ,d `` <++><esc>f`i
-    autocmd filetype markdown inoremap ,c ```<enter><++><enter>```<enter><enter><++><esc>4ka
-    autocmd filetype markdown inoremap ,h ====<space><++><esc>f=hi
-    autocmd filetype markdown inoremap ,p ![](<++>) <++><esc>f[a
-    autocmd filetype markdown inoremap ,a [](<++>) <++><esc>f[a
-    autocmd filetype markdown inoremap ,1 #<space><enter><++><esc>ka
-    autocmd filetype markdown inoremap ,2 ##<space><enter><++><esc>ka
-    autocmd filetype markdown inoremap ,3 ###<space><enter><++><esc>ka
-    autocmd filetype markdown inoremap ,4 ####<space><enter><++><esc>ka
-    autocmd filetype markdown inoremap ,l --------<enter>
+    " autocmd filetype markdown inoremap ,f <esc>/<++><cr>:nohlsearch<cr>c4l
+    " autocmd filetype markdown inoremap ,n ---<enter><enter>
+    " autocmd filetype markdown inoremap ,b **** <++><esc>f*hi
+    " autocmd filetype markdown inoremap ,s ~~~~ <++><esc>f~hi
+    " autocmd filetype markdown inoremap ,i ** <++><esc>f*i
+    " autocmd filetype markdown inoremap ,d `` <++><esc>f`i
+    " autocmd filetype markdown inoremap ,c ```<enter><++><enter>```<enter><enter><++><esc>4ka
+    " autocmd filetype markdown inoremap ,h ====<space><++><esc>f=hi
+    " autocmd filetype markdown inoremap ,p ![](<++>) <++><esc>f[a
+    " autocmd filetype markdown inoremap ,a [](<++>) <++><esc>f[a
+    " autocmd filetype markdown inoremap ,1 #<space><enter><++><esc>ka
+    " autocmd filetype markdown inoremap ,2 ##<space><enter><++><esc>ka
+    " autocmd filetype markdown inoremap ,3 ###<space><enter><++><esc>ka
+    " autocmd filetype markdown inoremap ,4 ####<space><enter><++><esc>ka
+    " autocmd filetype markdown inoremap ,l --------<enter>
+    
 endfunction
 
 
