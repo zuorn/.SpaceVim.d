@@ -11,6 +11,9 @@ function! conf#before() abort
     " 自动换行
     set wrap
 
+    inoremap jk <C-[>
+    " Copy to system clipboard
+    vnoremap Y +y
 
     " maarkdown 配置
 

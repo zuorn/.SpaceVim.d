@@ -5,7 +5,7 @@
 #=============================================================================
 #=============================================================================
 
-#============================= [选项] 配置 ================================================
+#============================= [选项] 配置 ===================================
 [options]
 
     # 主题
@@ -20,11 +20,52 @@
     enable_guicolors = true
 
     # 状态栏分割符
-    statusline_separator = "fire"
+    # statusline_separator = "fire"
     statusline_inactive_separator = "arrow"
-    buffer_index_type = 4
+    # buffer_index_type = 4
     enable_tabline_filetype_icon = true
-    enable_statusline_mode = false
+    # enable_statusline_mode = false
+#
+#============================= 状态栏 配置 ===================================
+    # options for statusline
+    # 设置状态栏上分割符号形状，如果字体安装失败，可以将值设为 "nil" 以禁用分割符号，
+    # 分割符包括以下几种 "arrow", "curve", "slant", "fire", "nil"，默认为箭头 "arrow"
+    # 设置活动窗口状态栏上的分割符号形状
+    statusline_separator = "fire"
+    # 设置非活动窗口状态栏上的分割符号形状
+    # statusline_iseparator = "curve"
+
+    # 设置顶部标签列表序号类型，有以下五种类型，分别是 0 - 4
+    buffer_index_type = 4
+    # 0: 1 ➛ ➊
+    # 1: 1 ➛ ➀
+    # 2: 1 ➛ ⓵
+    # 3: 1 ➛ ¹
+    # 4: 1 ➛ 1
+
+    # 是否在状态栏上显示当前模式，默认情况下，不显示 Normal/Insert 等
+    enable_statusline_mode = true
+
+    # 状态栏左端部分的构成
+    # statusline_left_sections = ['winnr', 'filename', 'fileformat', 'version control info', 'search status']
+    # 状态栏右端部分的构成
+    # statusline_right_sections = ['minor mode lighters', 'cursorpos', 'percentage', 'input method',  'time']
+    # 列表可以由以下一项或多项组成
+
+    # 'winnr' 当前窗口编号
+    # 'syntax checking'
+    # 'filename' 文件名
+    # 'fileformat' 文件格式
+    # 'major mode'
+    # 'minor mode lighters'
+    # 'cursorpos' 光标位置
+    # 'percentage' 百分比
+    # 'date' 日期
+    # 'time' 时间
+    # 'whitespace' 打开或者保存文件时，如果第 n 行的行尾有空格则显示 trailing[n]，并不能实时显示出行尾有空格的行号。
+    # 'battery status' 电池状态
+    # 'input method' 输入法
+    # 'search status' 搜索状态
 
     # 中文帮助文档
     vim_help_language = "cn"
@@ -40,7 +81,7 @@
 
 
 
-#============================= [插件] 配置 ================================================
+#============================= [模块] 配置 ================================================
 
 # Enable autocomplete layer
 [[layers]]
@@ -91,14 +132,43 @@ default_height = 50
 [[layers]]
   name = "git"
 
+
+# 该模块为 SpaceVim 提供了 Dash 集成。
+# SPC D d	查询光标下单词
+# SPC D D	在所有文档中查询光标单词
+[[layers]]
+  name = "tools#dash"
+
+
+# musics_directory: 设置音乐存放文件夹
+# mpv_interpreter: mpv 可执行命令路径
+# loop_mode: 循环模式，默认是 random
+# SPC m m l	模糊搜索音乐列表
+# SPC m m n	下一首
+# SPC m m s	停止播放
+
+# [[layers]]
+    # name = 'tools#mpv'
+    # mpv_interpreter = 'D:\Program Files\mpv\mpv.exe'
+    # musics_directory = 'F:\other\musics'
 #
 # 版本控制
 # [[layers]]
 #   name = "VersionControl"
 #
 # fzf - SpaceVim 内置的fzf
-# [[layers]]
-  # name = "fzf"
+[[layers]]
+  name = "fzf"
+
+
+# SpaceVim ui 模块提供了一个 IDE-like 的界面，包括状态栏、文件树、语法数等等特性。
+
+[[layers]]
+  name = "ui"
+
+# 这一模块用于在 SpaceVim 中直接运行单元测试。
+[[layers]]
+  name = "test"
 #
 #============================= python 开发环境 ================================================
 # 快速运行: SPC l r
