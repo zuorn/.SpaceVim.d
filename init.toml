@@ -132,6 +132,15 @@ default_height = 50
 [[layers]]
   name = "git"
 
+[[layers]]
+  name = "github"
+
+# 这一模块为 SpaceVim 提供了通用的代码版本控制支持，该模块支持 Git、Mercurial、Bazaar、SVN 等等多种后台工具。 为 SpaceVim 提供如下特性：
+#
+# 在左侧栏显示代码改动标记
+# 在状态栏显示 vcs 版本信息
+[[layers]]
+  name = "VersionControl"
 
 # 该模块为 SpaceVim 提供了 Dash 集成。
 # SPC D d	查询光标下单词

@@ -1,6 +1,6 @@
 
 
-function! conf#before() abort
+funtion! conf#before() abort
     " 设置 ranger 路径
     " set rtp+=~/path/to/your/localplugin
     " ranger 键位绑定
@@ -14,6 +14,9 @@ function! conf#before() abort
     inoremap jk <C-[>
     " Copy to system clipboard
     vnoremap Y +y
+
+    " Call figlet
+    " vnoremap \ :r !figlet
 
     " maarkdown 配置
 
